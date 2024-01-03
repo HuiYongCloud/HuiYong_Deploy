@@ -117,13 +117,13 @@
 ## 机器配置
 > 将项目文件夹拷贝到你对应的机器中，如果你的机器内存高于8G，可考虑部署在同一个机器中，如果不部署HY-B中的ELK，可以减少3个G
 - <a href="HY-A.md" target="_blank">👉HY-A部署</a>
-- [HY-B部署](HY-B.md)
-- [HY-C部署](HY-C.md)
+- <a href="HY-B.md" target="_blank">👉HY-B部署</a>
+- <a href="HY-C.md" target="_blank">👉HY-C部署</a>
 
 ## 项目部署
-- [1、Nacos配置说明](1、Nacos配置说明.md)
-- [2、Nginx部署说明](2、Nginx部署说明.md)
-- [3、前端页面部署](3、前端页面部署.md)
-- [4、Admin运维菜单](4、Admin运维菜单.md)
-- [5、账号说明](5、账号说明.md)
-- [6、站点地图](6、站点地图.md)
+- <a href="1、Nacos配置说明.md" target="_blank">👉1、Nacos配置说明</a>
+- <a href="2、Nginx部署说明.md" target="_blank">👉2、Nginx部署说明</a>
+- <a href="3、前端页面部署.md" target="_blank">👉3、前端页面部署</a>
+- <a href="4、Admin运维菜单.md" target="_blank">👉4、Admin运维菜单</a>
+- <a href="5、账号说明.md" target="_blank">👉5、账号说明</a>
+- <a href="6、站点地图.md" target="_blank">👉6、站点地图</a>
