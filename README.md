@@ -26,14 +26,14 @@
 | registry.cn-shenzhen.aliyuncs.com/huiyong/app-minio | 3.2.00 |
 | registry.cn-shenzhen.aliyuncs.com/better/sentinel_server_nacos | 1.8.6 |
 
-
-# <a href="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif" target="_blank">👉drawio绘制</a>
-
-# <a href="https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif" target="_blank">👉思维导图XMind</a>
-
 # ⛴ 后台管理截图
 
 <table>
+    <tr>
+        <td><a href="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif" target="_blank">👉查看drawio绘制</a></td>
+        <td><a href="https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif" target="_blank">👉查看思维导图</a></td>
+        <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699669331131.png"/></td>
+    </tr> 
     <tr>
         <td><img src="https://img.huiyong.online/blogImage/2023-12-02/59249caf-8898-4cf4-8147-4fb38e0f8231.png"/></td>
         <td><img src="https://img.huiyong.online/blogImage/2023-12-02/619c4f77-03d5-44fa-9207-4b7c673d162a.png"/></td>
@@ -58,9 +58,6 @@
         <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699797676861.png"/></td>
         <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699797832370.png"/></td>
         <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699797949578.png"/></td>
-    </tr>
-    <tr>
-        <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699669331131.png"/></td>
     </tr>
 </table>
 
@@ -111,15 +108,15 @@
 # 部署文档
 
 ## 服务器配置
-| 机器别名 | 类型 | CPU | 内存 | 网络 | 费用                                                                                                                  |
-|------| - | - | - | - |---------------------------------------------------------------------------------------------------------------------|
-| HY-A | ECS服务器	 | 2核 | 2GB | 3M | [阿里云99（续费同价）/ 一年](https://www.aliyun.com/lowcode/promotion/allinaliyun/99program?source=5176.11533457&userCode=1mbar5rx) |
-| HY-B | 腾迅轻量 | 2核 | 4GB | 5M | [腾讯轻量540（首单特惠）/ 三年](https://curl.qcloud.com/3DNxh4cL)                                                               |
-| HY-C | 腾迅轻量 | 2核 | 4GB | 5M | [腾讯轻量540（首单特惠）/ 三年](https://curl.qcloud.com/3DNxh4cL)                                                                   |
+| 机器别名 | 类型 | CPU | 内存 | 网络 | 费用                                                                                                                                                  |
+|------| - | - | - | - |-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| HY-A | ECS服务器	 | 2核 | 2GB | 3M | <a href="https://www.aliyun.com/lowcode/promotion/allinaliyun/99program?source=5176.11533457&userCode=1mbar5rx" target="_blank">阿里云99（续费同价）/ 一年</a> |
+| HY-B | 腾迅轻量 | 2核 | 4GB | 5M | <a href="https://curl.qcloud.com/3DNxh4cL" target="_blank">腾讯轻量540（首单特惠）/ 三年</a>                                                                    |
+| HY-C | 腾迅轻量 | 2核 | 4GB | 5M | <a href="https://curl.qcloud.com/3DNxh4cL" target="_blank">腾讯轻量540（首单特惠）/ 三年</a>      |
 
 ## 机器配置
 > 将项目文件夹拷贝到你对应的机器中，如果你的机器内存高于8G，可考虑部署在同一个机器中，如果不部署HY-B中的ELK，可以减少3个G
-- [HY-A部署](HY-A.md)
+- <a href="HY-A.md" target="_blank">👉HY-A部署</a>
 - [HY-B部署](HY-B.md)
 - [HY-C部署](HY-C.md)
 
