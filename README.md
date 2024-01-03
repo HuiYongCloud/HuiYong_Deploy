@@ -3,8 +3,8 @@
 </p>
 
 <h1 align="center" style="font-size: 28px; letter-spacing: 1px; font-weight: bold;">HuiYong.Online 私有化博客系统</h1>
-<h4 align="center" style="font-size: 20px; letter-spacing: 2px; line-height: 28px; margin-bottom: 30px;">一站式支持MarkDown、Drawio、XMind <br>免费、简单、强大...</h4>
-<h4 align="center" style="font-size: 15px; letter-spacing: 2px; line-height: 25px; margin-bottom: 30px;">用思维导图、流程图、写文章、做笔记、记录生活;<br>搭建自己 / 组织 / 公司的知识储备系统;<br>这里就是你所寻找的。</h4>
+<div align="center" style="font-size: 20px; letter-spacing: 2px; line-height: 28px; margin-bottom: 30px;">一站式支持MarkDown、Drawio、XMind <br>免费、简单、强大...</div>
+<div align="center" style="font-size: 15px; letter-spacing: 2px; line-height: 25px; margin-bottom: 30px;">用思维导图、流程图、写文章、做笔记、记录生活;<br>搭建自己 / 组织 / 公司的知识储备系统;<br>这里就是你所寻找的。</div>
 
 <p align="center">
   <img style="margin-top: 30px;" src="https://img.shields.io/badge/Spring%20Boot-3.2.0-green" alt="SpringBoot"/>
@@ -29,7 +29,7 @@
 # 🛸支持drawio绘制
 ![](https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif)
 
-## 🚤支持思维导图Xmind
+# 🚤支持思维导图Xmind
 ![](https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif)
 
 # ⛴ 后台管理截图
@@ -107,7 +107,7 @@
 </table>
 
 # 🍪 技术架构
-<div><img class="drawio-svg" src="https://img.huiyong.online/drawioSvg/2023-12-16/dd5d14b6-1812-41d5-8818-85334d90ce13.svg"/></div>
+![](https://img.huiyong.online/drawioSvg/2023-12-16/dd5d14b6-1812-41d5-8818-85334d90ce13.svg)
 
 # 部署文档
 
