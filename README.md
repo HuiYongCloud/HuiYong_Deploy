@@ -43,12 +43,6 @@
 ## <a href="https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif" target="_blank">👉查看思维导图</a>
 ![](https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif)
 
-[//]: # (    <tr>)
-[//]: # (        <td><a href="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif" target="_blank">👉查看drawio绘制</a></td>)
-[//]: # (        <td><a href="https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif" target="_blank">👉查看思维导图</a></td>)
-[//]: # (        <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699669331131.png"/></td>)
-[//]: # (    </tr> )
-
 <table>
     <tr>
         <td><img src="https://img.huiyong.online/blogImage/2023-12-02/59249caf-8898-4cf4-8147-4fb38e0f8231.png"/></td>
