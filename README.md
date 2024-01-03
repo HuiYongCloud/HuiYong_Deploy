@@ -2,9 +2,9 @@
   <img style="background-color: #00000000;" src="https://huiyong.online/logo.svg" width="200">
 </p>
 
-<h1 align="center" style="font-size: 28px; letter-spacing: 1px; font-weight: bold;">HuiYong.Online 私有化博客系统</h1>
-<div align="center" style="font-size: 20px; letter-spacing: 2px; line-height: 28px; margin-bottom: 30px;">一站式支持MarkDown、Drawio、XMind <br>免费、简单、强大...</div>
-<div align="center" style="font-size: 15px; letter-spacing: 2px; line-height: 25px; margin-bottom: 30px;">用思维导图、流程图、写文章、做笔记、记录生活;<br>搭建自己 / 组织 / 公司的知识储备系统;<br>这里就是你所寻找的。</div>
+<div align="center" style="font-size: 28px; letter-spacing: 1px; font-weight: bold; margin-bottom: 15px;">HuiYong.Online 私有化博客系统</div>
+<div align="center" style="font-size: 20px; letter-spacing: 2px; line-height: 28px; margin-bottom: 15px;">一站式支持MarkDown、Drawio、XMind <br>免费、简单、强大...</div>
+<div align="center" style="font-size: 14px; letter-spacing: 2px; line-height: 25px; margin-bottom: 30px;">用思维导图、流程图、写文章、做笔记、记录生活;<br>搭建自己 / 组织 / 公司的知识储备系统;<br>这里就是你所寻找的。</div>
 
 <p align="center">
   <img style="margin-top: 30px;" src="https://img.shields.io/badge/Spring%20Boot-3.2.0-green" alt="SpringBoot"/>
@@ -12,6 +12,12 @@
   <img style="margin-top: 30px;" src="https://img.shields.io/badge/Spring%20Cloud%20Alibaba-2022.0.0.0-brightgreen" alt="Spring Cloud Alibaba"/>
   <img style="margin-top: 30px;" src="https://img.shields.io/badge/Vue-3-brightgreen" alt="Vue3"/>
 </p>
+
+# 🎨 演示账号
+|名称 | 地址 | 账号 | 密码|
+|---|---|---|---|
+|管理后台 | [https://admin.huiyong.online](https://admin.huiyong.online)|test | test123 |
+|客户端 | [https://huiyong.online](https://huiyong.online) |test | test123 |
 
 # 最新版本
 
@@ -26,14 +32,21 @@
 | registry.cn-shenzhen.aliyuncs.com/huiyong/app-minio | 3.2.00 |
 | registry.cn-shenzhen.aliyuncs.com/better/sentinel_server_nacos | 1.8.6 |
 
+
 # ⛴ 后台管理截图
+## 👉查看drawio绘制
+![](https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif)
+
+## 👉查看思维导图
+![](https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif)
+
+[//]: # (    <tr>)
+[//]: # (        <td><a href="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif" target="_blank">👉查看drawio绘制</a></td>)
+[//]: # (        <td><a href="https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif" target="_blank">👉查看思维导图</a></td>)
+[//]: # (        <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699669331131.png"/></td>)
+[//]: # (    </tr> )
 
 <table>
-    <tr>
-        <td><a href="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif" target="_blank">👉查看drawio绘制</a></td>
-        <td><a href="https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif" target="_blank">👉查看思维导图</a></td>
-        <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699669331131.png"/></td>
-    </tr> 
     <tr>
         <td><img src="https://img.huiyong.online/blogImage/2023-12-02/59249caf-8898-4cf4-8147-4fb38e0f8231.png"/></td>
         <td><img src="https://img.huiyong.online/blogImage/2023-12-02/619c4f77-03d5-44fa-9207-4b7c673d162a.png"/></td>
