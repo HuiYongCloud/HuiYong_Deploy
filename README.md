@@ -108,14 +108,15 @@
 # 🍪 技术架构
 <div><img class="drawio-svg" src="https://img.huiyong.online/drawioSvg/2023-12-16/dd5d14b6-1812-41d5-8818-85334d90ce13.svg"/></div>
 
-# 服务器配置
+# 部署文档
+
+## 服务器配置
 | 机器别名 | 类型 | CPU | 内存 | 网络 | 费用                                                                                                                  |
 |------| - | - | - | - |---------------------------------------------------------------------------------------------------------------------|
 | HY-A | ECS服务器	 | 2核 | 2GB | 3M | [阿里云99（续费同价）/ 一年](https://www.aliyun.com/lowcode/promotion/allinaliyun/99program?source=5176.11533457&userCode=1mbar5rx) |
 | HY-B | 腾迅轻量 | 2核 | 4GB | 5M | [腾讯轻量540（首单特惠）/ 三年](https://curl.qcloud.com/3DNxh4cL)                                                               |
 | HY-C | 腾迅轻量 | 2核 | 4GB | 5M | [腾讯轻量540（首单特惠）/ 三年](https://curl.qcloud.com/3DNxh4cL)                                                                   |
 
-# 部署文档
 ## 机器配置
 ```sh
 git clone https://gitee.com/HuiYongCloud/HuiYong_Deploy.git
