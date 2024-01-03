@@ -105,7 +105,7 @@
 </table>
 
 # 🍪 技术架构
-![](https://img.huiyong.online/drawioSvg/2023-12-16/dd5d14b6-1812-41d5-8818-85334d90ce13.svg)
+![](https://img.huiyong.online/blogImage/U202111250003/2024-01-03/d4742d4d-d8c4-4bd2-8181-e40eac865786.png)
 
 # 部署文档
 
