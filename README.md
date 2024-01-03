@@ -27,9 +27,9 @@
 | registry.cn-shenzhen.aliyuncs.com/better/sentinel_server_nacos | 1.8.6 |
 
 
-# [👉drawio绘制](https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif){target="_blank"}
+# <a href="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif" target="_blank">👉drawio绘制</a>
 
-# [👉思维导图XMind](https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif){target="_blank"}
+# <a href="https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif" target="_blank">👉思维导图XMind</a>
 
 # ⛴ 后台管理截图
 
