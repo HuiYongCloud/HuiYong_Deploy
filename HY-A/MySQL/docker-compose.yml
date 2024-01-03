@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  huiyong-online-mysql:
+    image: mysql:8.1.0
+    container_name: huiyong-online-mysql
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+      MYSQL_ROOT_PASSWORD: {数据库密码}
+    # 1：但如果设置了lower_case_table_names=1，表名在存储和比较时都变为不区分大小写，即'myTable'和'mytable'会被视为同一个表
+    # 2：--sql-mode 移除 ONLY_FULL_GROUP_BY
+    command:
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+      --max-connections=1000
+      --sql-mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'
+      --lower_case_table_names=1
+    ports:
+      - "{数据库端口}:3306"
+    volumes:
+      - ./mysql/data:/var/lib/mysql

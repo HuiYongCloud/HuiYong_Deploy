@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  #
+  # rocketmq 文件夹需要加上777权限！！！
+  # rocketmq 文件夹需要加上777权限！！！
+  # rocketmq 文件夹需要加上777权限！！！
+  #
+  rocketmq_nameserver_513:
+    image: apache/rocketmq:5.1.3
+    container_name: rocketmq_nameserver_513
+    ports:
+      - 9876:9876
+    volumes:
+      - ./rocketmq:/opt/rocketmq
+    environment:
+      JAVA_OPT_EXT: "-Xms512M -Xmx512M -Xmn256m"
+    command: sh mqnamesrv
+
+  rocketmq_broker_510:
+    image: apache/rocketmq:5.1.3
+    container_name: rocketmq_broker_513
+    ports:
+      - 10909:10909
+      - 10911:10911
+      - 10912:10912
+    volumes:
+      - ./rocketmq:/opt/rocketmq
+      - ./conf/broker.conf:/etc/rocketmq/broker.conf
+    environment:
+      JAVA_OPT_EXT: "-Xms512M -Xmx512M -Xmn256m"
+    command: sh mqbroker -c /etc/rocketmq/broker.conf
+    depends_on:
+      - rocketmq_nameserver_513

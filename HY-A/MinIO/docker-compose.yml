@@ -1,0 +1,46 @@
+version: "3.8"
+services:
+  minio:
+    image: minio/minio:RELEASE.2023-12-14T18-51-57Z
+    container_name: minio
+    restart: always
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - "./minio/data:/data"
+    command: server --console-address ":9001" /data
+    # MINIO_BROWSER_REDIRECT_URL 为控制台域名，浏览器直接打开访问的
+    environment:
+      - MINIO_ROOT_USER={MinIO用户名}
+      - MINIO_ROOT_PASSWORD={MinIO密码}
+      - MINIO_BROWSER_REDIRECT_URL=http://{HY-A内网IP}/minio/
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  # UUA
+  app-minio:
+    image: registry.cn-shenzhen.aliyuncs.com/huiyong/app-minio:3.2.00
+    container_name: app-minio
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+      - LANG=en_US.UTF-8
+      # 数据库
+      - DB_URL={HY-A内网IP}:{数据库端口}/db_minio
+      - DB_USER=root
+      - DB_PASSWORD={数据库密码}
+      # MinIO 配置
+      - HuiYong_DOMAIN={一级域名}
+      - MINIO_ENDPOINT=http://{HY-A公网IP}:9000
+      - MINIO_ACCESS_KEY={MINIO_ACCESS_KEY}
+      - MINIO_ACCESS_SECRET={MINIO_ACCESS_SECRET}
+      - MINIO_BUCKET=huiyong
+    volumes:
+      - ./logs/app_minio/:/logs/:rw
+    ports:
+      - "18080:80"
+    command: java -jar /app.jar --spring.profiles.active=prod --server.port=80

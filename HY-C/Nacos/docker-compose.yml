@@ -1,0 +1,75 @@
+version: "3.8"
+services:
+  # # # # # # # # # # # # # # # # # #
+  #                                 #
+  #  Nacos服务中心与配置中心           #
+  #  http://localhost:8848/nacos/   #
+  #                                 #
+  # # # # # # # # # # # # # # # # # #
+  huiyong-online-nacos-server:
+    image: nacos/nacos-server:v2.2.0-slim
+    container_name: huiyong-online-nacos-server
+    # 禁用虚拟内存
+    mem_swappiness: 0
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+      PREFER_HOST_MODE: hostname
+      MODE: standalone
+      SPRING_DATASOURCE_PLATFORM: mysql
+      MYSQL_SERVICE_HOST: {HY-A公网IP}
+      MYSQL_SERVICE_DB_NAME: db_nacos_config
+      MYSQL_SERVICE_PORT: {数据库端口}
+      MYSQL_SERVICE_USER: root
+      MYSQL_SERVICE_PASSWORD: {数据库密码}
+      MYSQL_SERVICE_DB_PARAM: characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+      JVM_XMS: 256m
+      JVM_XMX: 256m
+      JVM_XMN: 128m
+    volumes:
+      - ./nacos-server/logs:/home/nacos/logs
+    # naos升级到2.0，需要开放3个端口，8848，9848，9849
+    ports:
+      - "8848:8848"
+      - "9848:9848"
+      - "9849:9849"
+    networks:
+      - huiyong-net
+
+  # # # # # # # # # # # # # # #
+  #                           #
+  #  微服务的高可用流控防护组件    #
+  #  http://localhost:20000/  #
+  #                           #
+  # # # # # # # # # # # # # # #
+  huiyong-online-sentinel-dashboard-nacos:
+    image: registry.cn-shenzhen.aliyuncs.com/better/sentinel_server_nacos:1.8.6
+    container_name: huiyong-online-sentinel-dashboard-nacos
+    # 使用虚拟内存
+    mem_swappiness: 100
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+      SENTINEL_AUTH_USERNAME: {初始化SENTINEL用户名}
+      SENTINEL_AUTH_PASSWORD: {初始化SENTINEL密码}
+      NACOS_SERVER_ADDR: huiyong-online-nacos-server:8848
+      NACOS_USERNAME: nacos_auth_user
+      NACOS_PASSWORD: nacos_auth_user
+      NACOS_GROUP: DEFAULT_GROUP
+      NACOS_NAMESPACE: HuiYong-Sentinel
+      LOG_DIR: /logs/
+    volumes:
+      - ./nacos-dashboard/logs/:/logs/
+    ports:
+      - "20000:8080"
+    external_links:
+      - huiyong-online-nacos-server
+    networks:
+      - huiyong-net
+
+networks:
+  huiyong-net:
+    # 声明这个网络是外部定义的
+    external: true

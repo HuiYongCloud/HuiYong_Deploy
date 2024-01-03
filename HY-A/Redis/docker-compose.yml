@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  huiyong-online-redis:
+    image: redis:6.2.13-alpine
+    container_name: huiyong-online-redis
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - "10003:6379"
+    volumes:
+      - ./redis:/data
+      - ./conf/redis.conf:/etc/redis/redis.conf
+    sysctls:
+      - net.core.somaxconn=1024
+    command: /bin/sh -c "redis-server /etc/redis/redis.conf --appendonly yes  --requirepass {Redis密码}"

@@ -1,0 +1,43 @@
+version: "3.8"
+services:
+  # 网关
+  huiyong-xxl-job-admin:
+    image: xuxueli/xxl-job-admin:2.4.0
+    container_name: huiyong-xxl-job-admin
+    restart: always
+    volumes:
+      - ./logs/job-admin:/data/applogs
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+      PARAMS: '
+        ### 调度中心JDBC链接
+        --spring.datasource.url=jdbc:mysql://{HY-A公网IP}:{数据库端口}/db_jobs?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true
+        --spring.datasource.username=root
+        --spring.datasource.password={数据库密码}
+        ### 报警邮箱
+        - spring.mail.host=smtp.qq.com
+        - spring.mail.port=465
+        - spring.mail.username={QQ邮箱}
+        - spring.mail.password={授权码}
+        - spring.mail.properties.mail.smtp.auth=true
+        - spring.mail.properties.mail.smtp.starttls.enable=true
+        - spring.mail.properties.mail.smtp.starttls.required=true
+        - spring.mail.properties.mail.smtp.socketFactory.class=javax.net.ssl.SSLSocketFactory
+        ### 调度中心国际化配置 [必填]： 默认为 "zh_CN"/中文简体, 可选范围为 "zh_CN"/中文简体, "zh_TC"/中文繁体 and "en"/英文；
+        - xxl.job.i18n=zh_CN
+        ## 调度线程池最大线程配置【必填】
+        - xxl.job.triggerpool.fast.max=200
+        - xxl.job.triggerpool.slow.max=100
+        ### 调度中心日志表数据保存天数 [必填]：过期日志自动清理；限制大于等于7时生效，否则, 如-1，关闭自动清理功能；
+        - xxl.job.logretentiondays=7
+        '
+    ports:
+      - "20080:8080"
+    networks:
+      - huiyong-net
+
+networks:
+  huiyong-net:
+    # 声明这个网络是外部定义的
+    external: true

@@ -1,0 +1,126 @@
+version: "3.8"
+services:
+  # 网关
+  huiyong-app-gateway:
+    image: registry.cn-shenzhen.aliyuncs.com/huiyong/app-gateway:3.2.00
+    container_name: huiyong-app-gateway
+    # 禁用虚拟内存
+    mem_swappiness: 0
+    env_file:
+      - .env
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+    volumes:
+      - ./logs/app_gateway/:/logs/:rw
+      - ./es/es_ca.crt/:/app/es_ca.crt:rw
+    ports:
+      - "20001:80"
+    command: java -jar /app.jar --spring.profiles.active=prod --server.port=80
+    networks:
+      - huiyong-net
+
+  # mq
+  huiyong-app-mq:
+    image: registry.cn-shenzhen.aliyuncs.com/huiyong/app-mq:3.2.00
+    container_name: huiyong-app-mq
+    # 禁用虚拟内存
+    mem_swappiness: 0
+    restart: always
+    env_file:
+      - .env
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+    volumes:
+      - ./logs/app_mq/:/logs/:rw
+      - ./es/es_ca.crt/:/app/es_ca.crt:rw
+    ports:
+      - "21002:80"
+    command: java -jar /app.jar --spring.profiles.active=prod --server.port=80
+    networks:
+      - huiyong-net
+
+  # task
+  huiyong-app-task:
+    image: registry.cn-shenzhen.aliyuncs.com/huiyong/app-task:3.2.00
+    container_name: huiyong-app-task
+    # 禁用虚拟内存
+    mem_swappiness: 0
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+    env_file:
+      - .env
+    volumes:
+      - ./logs/app_task/:/logs/app-task/:rw
+      - /root/html/seo:/seo
+      - ./es/es_ca.crt/:/app/es_ca.crt:rw
+    command: java -jar /app.jar --spring.profiles.active=prod --server.port=80
+    networks:
+      - huiyong-net
+
+  # 管理后台
+  huiyong-api-admin:
+    image: registry.cn-shenzhen.aliyuncs.com/huiyong/api-admin:3.2.00
+    container_name: huiyong-api-admin
+    # 禁用虚拟内存
+    mem_swappiness: 0
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+    env_file:
+      - .env
+    volumes:
+      - ./logs/api_admin/:/logs/:rw
+      - ./es/es_ca.crt/:/app/es_ca.crt:rw
+    ports:
+      - "21000:80"
+    command: java -jar /app.jar --spring.profiles.active=prod --server.port=80
+    networks:
+      - huiyong-net
+
+  # UUA
+  huiyong-api-uaa:
+    image: registry.cn-shenzhen.aliyuncs.com/huiyong/api-uaa:3.2.00
+    container_name: huiyong-api-uaa
+    # 禁用虚拟内存
+    mem_swappiness: 0
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+    env_file:
+      - .env
+    volumes:
+      - ./logs/api_uua/:/logs/:rw
+      - ./es/es_ca.crt/:/app/es_ca.crt:rw
+    ports:
+      - "20002:80"
+    command: java -jar /app.jar --spring.profiles.active=prod --server.port=80
+    networks:
+      - huiyong-net
+
+  # 客户端
+  huiyong-api-client:
+    image: registry.cn-shenzhen.aliyuncs.com/huiyong/api-client:3.2.00
+    container_name: huiyong-api-client
+    # 禁用虚拟内存
+    mem_swappiness: 0
+    env_file:
+      - .env
+    environment:
+      TZ: Asia/Shanghai
+      LANG: en_US.UTF-8
+    volumes:
+      - ./logs/api_client/:/logs/:rw
+      - ./es/es_ca.crt/:/app/es_ca.crt:rw
+    ports:
+      - "21001:80"
+    command: java -jar /app.jar --spring.profiles.active=prod --server.port=80
+    networks:
+      - huiyong-net
+
+networks:
+  huiyong-net:
+    # 声明这个网络是外部定义的
+    external: true
