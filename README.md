@@ -144,7 +144,7 @@
 | HY-C | 腾迅轻量 | 2核 | 4GB | 5M | <a href="https://curl.qcloud.com/3DNxh4cL" target="_blank">腾讯轻量540（首单特惠）/ 三年</a>      |
 
 ## 机器配置
-> 将项目文件夹拷贝到你对应的机器中，如果你的机器内存高于8G，可考虑部署在同一个机器中，如果不部署HY-B中的ELK，可以减少3个G
+> 将项目文件夹拷贝到你对应的机器中，如果你的机器内存高于8G，可考虑部署在同一个机器中，如果不部署HY-B中的ELK，至少需要7个G内存。
 - <a href="HY-A.md" target="_blank">👉HY-A部署</a>
 - <a href="HY-B.md" target="_blank">👉HY-B部署</a>
 - <a href="HY-C.md" target="_blank">👉HY-C部署</a>
