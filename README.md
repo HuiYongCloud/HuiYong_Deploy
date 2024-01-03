@@ -36,20 +36,6 @@
 |管理后台 | [https://admin.huiyong.online](https://admin.huiyong.online)|test | test123 |
 |客户端 | [https://huiyong.online](https://huiyong.online) |test | test123 |
 
-# 最新版本
-
-| 镜像名  | 版本号    |
-|------|--------|
-| registry.cn-shenzhen.aliyuncs.com/huiyong/app-gateway | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/app-mq | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/app-task | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/api-admin | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/api-uaa | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/api-client | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/app-minio | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/better/sentinel_server_nacos | 1.8.6 |
-
-
 # 后台管理截图
 ## <a href="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif" target="_blank">👉查看drawio绘制</a>
 ![](https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif)
@@ -136,6 +122,19 @@
 ![](https://img.huiyong.online/blogImage/U202111250003/2024-01-03/d4742d4d-d8c4-4bd2-8181-e40eac865786.png)
 
 # 部署文档
+
+## 最新版本
+
+| 镜像名  | 版本号    |
+|------|--------|
+| registry.cn-shenzhen.aliyuncs.com/huiyong/app-gateway | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/app-mq | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/app-task | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/api-admin | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/api-uaa | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/api-client | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/app-minio | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/better/sentinel_server_nacos | 1.8.6 |
 
 ## 服务器配置
 | 机器别名 | 类型 | CPU | 内存 | 网络 | 费用                                                                                                                                                  |
