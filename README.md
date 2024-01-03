@@ -26,11 +26,9 @@
 | registry.cn-shenzhen.aliyuncs.com/huiyong/app-minio | 3.2.00 |
 | registry.cn-shenzhen.aliyuncs.com/better/sentinel_server_nacos | 1.8.6 |
 
-# 🛸支持drawio绘制
-![](https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif)
+# [🛸drawio绘制](https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif)
 
-# 🚤支持思维导图Xmind
-![](https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif)
+# [🚤思维导图XMind](https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif)
 
 # ⛴ 后台管理截图
 
