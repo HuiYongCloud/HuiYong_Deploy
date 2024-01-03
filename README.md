@@ -13,7 +13,7 @@
   <img style="margin-top: 30px;" src="https://img.shields.io/badge/Vue-3-brightgreen" alt="Vue3"/>
 </p>
 
-# 🎨 演示账号
+# 演示账号
 |名称 | 地址 | 账号 | 密码|
 |---|---|---|---|
 |管理后台 | [https://admin.huiyong.online](https://admin.huiyong.online)|test | test123 |
@@ -33,7 +33,7 @@
 | registry.cn-shenzhen.aliyuncs.com/better/sentinel_server_nacos | 1.8.6 |
 
 
-# ⛴ 后台管理截图
+# 后台管理截图
 ## <a href="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif" target="_blank">👉查看drawio绘制</a>
 ![](https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif)
 
@@ -74,7 +74,7 @@
     </tr>
 </table>
 
-# 🛻 客户端截图
+# 客户端截图
 <table>
     <tr>
         <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699811962499.png"/></td>
@@ -115,7 +115,7 @@
     </tr>
 </table>
 
-# 🍪 技术架构
+# 服务架构
 ![](https://img.huiyong.online/blogImage/U202111250003/2024-01-03/d4742d4d-d8c4-4bd2-8181-e40eac865786.png)
 
 # 部署文档
