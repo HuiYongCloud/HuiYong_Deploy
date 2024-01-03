@@ -3,8 +3,8 @@
 </p>
 
 <h1 align="center" style="font-size: 28px; letter-spacing: 1px; font-weight: bold;">HuiYong.Online 私有化博客系统</h1>
-<h4 align="center" style="font-size: 20px; letter-spacing: 2px; margin-bottom: 30px;">一站式支持MarkDown、Drawio、XMind <br>免费、简单、强大...</h4>
-<h4 align="center" style="font-size: 15px; letter-spacing: 2px; margin-bottom: 30px;">用思维导图、流程图、写文章、做笔记、记录生活;<br>搭建自己 / 组织 / 公司的知识储备系统;<br>这里就是你所寻找的。</h4>
+<h4 align="center" style="font-size: 20px; letter-spacing: 2px; line-height: 28px; margin-bottom: 30px;">一站式支持MarkDown、Drawio、XMind <br>免费、简单、强大...</h4>
+<h4 align="center" style="font-size: 15px; letter-spacing: 2px; line-height: 25px; margin-bottom: 30px;">用思维导图、流程图、写文章、做笔记、记录生活;<br>搭建自己 / 组织 / 公司的知识储备系统;<br>这里就是你所寻找的。</h4>
 
 <p align="center">
   <img style="margin-top: 30px;" src="https://img.shields.io/badge/Spring%20Boot-3.2.0-green" alt="SpringBoot"/>
