@@ -6,7 +6,7 @@
 <div align="center" style="font-size: 20px; letter-spacing: 2px; margin-bottom: 30px;">一站式支持MarkDown、Drawio、XMind <br>免费、简单、强大...</div>
 <div align="center" style="font-size: 15px; letter-spacing: 2px; margin-bottom: 30px;">用思维导图、流程图、写文章、做笔记、记录生活;<br>搭建自己 / 组织 / 公司的知识储备系统;<br>这里就是你所寻找的。</div>
 
-<p align="center">
+<p align="center" style=" margin-top: 30px;">
   <img src="https://img.shields.io/badge/Spring%20Boot-3.2.0-green" alt="SpringBoot"/>
   <img src="https://img.shields.io/badge/Spring%20Cloud-2022.0.4-blue" alt="SpringCloud"/>
   <img src="https://img.shields.io/badge/Spring%20Cloud%20Alibaba-2022.0.0.0-brightgreen" alt="Spring Cloud Alibaba"/>
