@@ -121,3 +121,8 @@
 
 # 服务架构
 ![](https://img.huiyong.online/blogImage/U202111250003/2024-01-03/d4742d4d-d8c4-4bd2-8181-e40eac865786.png)
+
+# 交流讨论
+- 欢迎加入微信交流群，加微备注：HuiYong.Online
+
+<img style="width: 200px" src="微信二维码.png"/>
