@@ -125,4 +125,4 @@
 # 交流讨论
 - 欢迎加入微信交流群，加微备注：HuiYong.Online
 
-<img style="width: 200px" src="微信二维码.png"/>
+<img width="200" src="微信二维码.png"/>
