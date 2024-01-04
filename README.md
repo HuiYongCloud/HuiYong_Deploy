@@ -34,6 +34,9 @@
 - 数据面板：博客访问记录，趋势、日统计、月统计展示。
 - 导入导出：支持Drawio导入导出，支持XMind导入导出。
 
+# 部署文档
+[https://huiyong.online/?tab=deploy](https://huiyong.online/?tab=deploy)
+
 # 演示账号
 |名称 | 地址 | 账号 | 密码|
 |---|---|---|---|
@@ -118,39 +121,3 @@
 
 # 服务架构
 ![](https://img.huiyong.online/blogImage/U202111250003/2024-01-03/d4742d4d-d8c4-4bd2-8181-e40eac865786.png)
-
-# 部署文档
-
-## docker镜像最新版本
-
-| 镜像名  | 版本号    |
-|------|--------|
-| registry.cn-shenzhen.aliyuncs.com/huiyong/app-gateway | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/app-mq | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/app-task | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/api-admin | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/api-uaa | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/api-client | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/huiyong/app-minio | 3.2.00 |
-| registry.cn-shenzhen.aliyuncs.com/better/sentinel_server_nacos | 1.8.6 |
-
-## 服务器配置
-| 机器别名 | 类型 | CPU | 内存 | 网络 | 费用                                                                                                                                                  |
-|------| - | - | - | - |-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| HY-A | ECS服务器	 | 2核 | 2GB | 3M | <a href="https://www.aliyun.com/lowcode/promotion/allinaliyun/99program?source=5176.11533457&userCode=1mbar5rx" target="_blank">阿里云99（续费同价）/ 一年</a> |
-| HY-B | 腾迅轻量 | 2核 | 4GB | 5M | <a href="https://curl.qcloud.com/3DNxh4cL" target="_blank">腾讯轻量540（首单特惠）/ 三年</a>                                                                    |
-| HY-C | 腾迅轻量 | 2核 | 4GB | 5M | <a href="https://curl.qcloud.com/3DNxh4cL" target="_blank">腾讯轻量540（首单特惠）/ 三年</a>      |
-
-## 机器配置
-> 将项目文件夹拷贝到你对应的机器中，如果你的机器内存高于8G，可考虑部署在同一个机器中，如果不部署HY-B中的ELK，至少需要7个G内存。
-- <a href="HY-A.md" target="_blank">👉HY-A部署</a>
-- <a href="HY-B.md" target="_blank">👉HY-B部署</a>
-- <a href="HY-C.md" target="_blank">👉HY-C部署</a>
-
-## 项目部署
-- <a href="1、Nacos配置说明.md" target="_blank">👉1、Nacos配置说明</a>
-- <a href="2、Nginx部署说明.md" target="_blank">👉2、Nginx部署说明</a>
-- <a href="3、前端页面部署.md" target="_blank">👉3、前端页面部署</a>
-- <a href="4、Admin运维菜单.md" target="_blank">👉4、Admin运维菜单</a>
-- <a href="5、账号说明.md" target="_blank">👉5、账号说明</a>
-- <a href="6、站点地图.md" target="_blank">👉6、站点地图</a>
