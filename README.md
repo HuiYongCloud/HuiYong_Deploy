@@ -46,8 +46,8 @@
 # 后台管理截图
 <table>
     <tr>
-        <td><h3>drawio绘制</h3><img src="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif"/></td>
-        <td><h3>思维导图</h3><img src="https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif"/></td>
+        <td><h3>drawio绘制</h3><img src="./drawio.gif"/></td>
+        <td><h3>思维导图</h3><img src="./xmind.gif"/></td>
     </tr>
 </table>
 
