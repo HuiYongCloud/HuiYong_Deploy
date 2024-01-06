@@ -30,7 +30,7 @@
 - 基本样式：粗体、斜体、删除线、引用、列表、图片、表格、语法高亮等。
 - 隐私：公开/私密文章，私密文章仅自己可看，或者分享权限码给好友可看。
 - 完善的权限管理系统，角色、用户、菜单，独立管理。
-- 文章互动：点赞、关注、收藏
+- 文章互动：点赞、关注、收藏、搜索引擎SEO收录。
 - 数据面板：博客访问记录，趋势、日统计、月统计展示。
 - 导入导出：支持Drawio导入导出，支持XMind导入导出。
 
@@ -44,13 +44,15 @@
 |客户端 | [https://huiyong.online](https://huiyong.online) |test | test123 |
 
 # 后台管理截图
-## <a href="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif" target="_blank">👉查看drawio绘制</a>
-![](https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif)
-
-## <a href="https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif" target="_blank">👉查看思维导图</a>
-![](https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif)
+<table>
+    <tr>
+        <td><h3>drawio绘制</h3><img src="https://img.huiyong.online/blogImage/2023-12-16/72f62307-a383-4411-9385-be189e807254.gif"/></td>
+        <td><h3>思维导图</h3><img src="https://img.huiyong.online/blogImage/2023-12-29/b889a650-88b7-437b-9117-4ce661bb3152.gif"/></td>
+    </tr>
+</table>
 
 <table>
+    <h3>其他截图</h3>
     <tr>
         <td><img src="https://img.huiyong.online/blogImage/2023-12-02/59249caf-8898-4cf4-8147-4fb38e0f8231.png"/></td>
         <td><img src="https://img.huiyong.online/blogImage/2023-12-02/619c4f77-03d5-44fa-9207-4b7c673d162a.png"/></td>
@@ -75,6 +77,9 @@
         <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699797676861.png"/></td>
         <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699797832370.png"/></td>
         <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699797949578.png"/></td>
+    </tr>
+    <tr>
+        <td><img src="https://img.huiyong.online/blogImage/AD2023001/1699669331131.png"/></td>
     </tr>
 </table>
 
