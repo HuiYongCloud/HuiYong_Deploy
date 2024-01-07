@@ -37,6 +37,27 @@
 # 部署文档
 [https://huiyong.online/?tab=deploy](https://huiyong.online/?tab=deploy)
 
+## 镜像最新版本
+
+| 镜像名  | 版本号    |
+|------|--------|
+| registry.cn-shenzhen.aliyuncs.com/huiyong/app-gateway | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/app-mq | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/app-task | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/api-admin | 3.2.01 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/api-uaa | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/api-client | 3.2.01 |
+| registry.cn-shenzhen.aliyuncs.com/huiyong/app-minio | 3.2.00 |
+| registry.cn-shenzhen.aliyuncs.com/better/sentinel_server_nacos | 1.8.6 |
+
+## 服务器配置
+| 机器别名 | 类型 | CPU | 内存 | 网络 | 费用                                                                                                                                                  |
+|------| - | - | - | - |-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| HY-A | ECS服务器	 | 2核 | 2GB | 3M | <a href="https://www.aliyun.com/lowcode/promotion/allinaliyun/99program?source=5176.11533457&userCode=1mbar5rx" target="_blank">阿里云99（续费同价）/ 一年</a> |
+| HY-B | 腾迅轻量 | 2核 | 4GB | 5M | <a href="https://curl.qcloud.com/3DNxh4cL" target="_blank">腾讯轻量540（首单特惠）/ 三年</a>                                                                    |
+| HY-C | 腾迅轻量 | 2核 | 4GB | 5M | <a href="https://curl.qcloud.com/3DNxh4cL" target="_blank">腾讯轻量540（首单特惠）/ 三年</a>      |
+
+
 # 演示账号
 |名称 | 地址 | 账号 | 密码|
 |---|---|---|---|
